@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0
+}
+
+a {
+    text-decoration: none
+}
+
+body {
+    font-family: Hiragino Sans GB,Arial,Helvetica,"宋体",sans-serif;
+    font-size: 14px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    background-color: #eeeff0;
+    overflow-x:hidden;
+}
+
+header{
+    height: 45px;
+    background-color: #22272a;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 45px;
+}
+
+.category{
+    position: relative;
+    height: 40px;
+    background-color: #eeeff0;
+}
+
+.category .item{
+    float: left;
+    width: 50%;
+    height: 42px;
+    line-height: 40px;
+    color: #d44449;
+    font-size: 16px;
+    text-align: center;
+}
+
+.layer{
+    position: absolute;
+    bottom: 0px;
+    height: 2px;
+    background-color: #cdcecf;
+    width: 100%;
+}
+
+.on{
+    position: absolute;
+    width: 50%;
+    background-color: #d1372d;
+    height: 2px;
+    left: 0px;
+}
+
+.sh{
+    background-color: #eeeff0;
+    padding: 10px 10px 35px 10px;
+    margin-bottom: 90px;
+}
+
+.sh .item{
+    position: relative;
+    margin-bottom: 30px;
+    box-shadow: 2px 4px 4px rgba(0,0,0,0.35);
+    border-radius: 5px;
+    background-color: #fff;
+    height: 160px;
+    padding: 5px 10px 5px 10px;
+}
+
+.sh .item .img{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
+
+.sh .item .img img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.sh .item .name{
+    position: absolute;
+    left: 70px;
+    right: 10px;
+    top: 5px;
+    height: 50px;
+    line-height: 50px;
+    color: #949596;
+    font-size: 17px;
+}
+
+.sh .item .detail{
+    position: absolute;
+    top: 55px;
+    left: 10px;
+    right: 10px;
+    height: 40px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    height: 45px;
+    width: 100%;
+    background-color: #c9352b;
+}
+
+footer .item{
+    float: left;
+    height: 45px;
+    line-height: 45px;
+    width: 33%;
+    text-align: center;
+    color: #fff;
+}
+
+.sh .item .detail .item2{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    width: 33%;
+    color: #949596;
+    font-size: 14px;
+}
+
+.sh .item .beizhu{
+    position: absolute;
+    top: 95px;
+    left: 10px;
+    right: 10px;
+    height: 30px;
+    line-height: 30px;
+    color: #949596;
+    font-size: 14px;
+}
+
+.sh .item .btns{
+    position: absolute;
+    height: 25px;
+    width: 150px;
+    padding: 10px 10px 10px 0px;
+    bottom: 0px;
+    right: 0px;
+}
+
+.sh .item .btns .qx{
+    float: left;
+    width: 70px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+    color: #949596;
+}
+
+.sh .item .btns .wk{
+    float: left;
+    text-align: center;
+    margin-left: 6px;
+    width: 70px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+    color: #949596;
+}
+
+.yuding{
+    position: fixed;
+    width: 100%;
+    bottom: 45px;
+    height: 45px;
+    line-height: 45px;
+    background-color: #FEFFFf;
+    color: #d2372d;
+    font-size: 20px;
+    text-align: center;
+}

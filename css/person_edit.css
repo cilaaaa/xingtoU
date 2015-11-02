@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0
+}
+
+a {
+    text-decoration: none
+}
+
+body {
+    font-family: Hiragino Sans GB,Arial,Helvetica,"宋体",sans-serif;
+    font-size: 14px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    background-color: #eeeff0;
+    overflow-x:hidden;
+}
+
+header{
+    height: 45px;
+    background-color: #22272a;
+    width: 100%;
+}
+
+header .back {
+    padding-left: 18px;
+    position: relative;
+    color: #fff;
+    height: 45px;
+    line-height: 45px;
+}
+
+header .back:before {
+    border: #fff solid 3px;
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    margin-top: -8px;
+    display: block;
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+header .title {
+    font-size: 16px;
+    position: absolute;
+    width: 180px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    left: 50%;
+    top: 0px;
+    margin-left: -90px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+}
+
+ul,li{
+    list-style: none;
+}
+
+.main{
+    padding: 20px 40px 20px 40px;
+}
+
+.main .head{
+    height: 100px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.main .head label{
+    display: inline-block;
+    font-size: 18px;
+    color: #949596;
+    text-align: center;
+    width: 30%;
+    height: 100px;
+    line-height: 100px;
+}
+
+.main .head img{
+    position: absolute;
+    left: 60%;
+    margin-left: -40px;
+    width: 80px;
+    height: 80px;
+    top: 10px;
+    border-radius: 50%;
+}
+
+.inputfile{
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    bottom: 0px;
+    left: 30%;
+    right: 0px;
+}
+
+.main .item{
+    height: 40px;
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.main .item label{
+    display: inline-block;
+    font-size: 18px;
+    color: #949596;
+    text-align: center;
+    width: 30%;
+    height: 40px;
+    line-height: 40px;
+}
+
+.inputradiowrap{
+    position: absolute;
+    height: 40px;
+    left: 30%;
+    top: 0px;
+    width: 70%;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: #949596;
+}
+
+.inputradio{
+    background-color: #ae2c24;
+    color: #ae2c24;
+    margin-right: 5px;
+    margin-left: -20px;
+}
+
+.inputradio:last-child{
+    margin-left: 40px;
+}
+
+.inputtxt{
+    position: absolute;
+    left: 30%;
+    top: 5px;
+    height: 30px;
+    line-height: 30px;
+    width: 70%;
+    border-radius: 4px;
+    border: 1px solid #e7cacc;
+}
+
+.save{
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.save .save_btn{
+    padding: 0px 25px;
+    font-size: 18px;
+    color: #fff;
+    height: 30px;
+    background-color: #d2372d;
+    border: none;
+    border-radius: 2px;
+}

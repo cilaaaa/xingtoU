@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" id="viewport" name="viewport" />
+    <meta name="format-detection" content="telephone=no" />
+    <script type="text/javascript" src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <link href="../css/person_edit.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <a href="javascript:void(0)" onclick="javascript:history.back(-1)" class="back">返回</a>
+        <div class="title">个人资料编辑</div>
+    </header>
+    <ul class="main">
+        <form>
+            <li class="head">
+                <label>头像</label>
+                <img src="">
+                <input type="file" class="inputfile"/>
+            </li>
+            <li class="item">
+                <label>昵称</label>
+                <input type="txt" class="inputtxt"/>
+            </li>
+            <li class="item">
+                <label>姓名</label>
+                <input type="txt" class="inputtxt"/>
+            </li>
+            <li class="item">
+                <label>年龄</label>
+                <input type="txt" class="inputtxt"/>
+            </li>
+            <li class="item">
+                <label>性别</label>
+                <div class="inputradiowrap">
+                    <input type="radio" name="sex" value="0" class="inputradio" /> 女
+                    <input type="radio" name="sex" value="1" class="inputradio" /> 男
+                </div>
+            </li>
+            <li class="item">
+                <label>身高</label>
+                <input type="txt" class="inputtxt"/>
+            </li>
+            <li class="item">
+                <label>体重</label>
+                <input type="txt" class="inputtxt"/>
+            </li>
+        </form>
+    </ul>
+    <div class="save">
+        <button type="button" class="save_btn">保存</button>
+    </div>
+</body>
+</html>

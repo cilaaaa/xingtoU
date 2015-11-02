@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0
+}
+
+a {
+    text-decoration: none
+}
+
+body {
+    font-family: Hiragino Sans GB,Arial,Helvetica,"宋体",sans-serif;
+    font-size: 14px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    background-color: #eeeff0;
+    overflow-x:hidden;
+}
+
+header{
+    height: 45px;
+    background-color: #22272a;
+    width: 100%;
+}
+
+header .back {
+    padding-left: 18px;
+    position: relative;
+    color: #fff;
+    height: 45px;
+    line-height: 45px;
+}
+
+header .back:before {
+    border: #fff solid 3px;
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    margin-top: -8px;
+    display: block;
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+header .title {
+    font-size: 16px;
+    position: absolute;
+    width: 180px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    left: 50%;
+    top: 0px;
+    margin-left: -90px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+}
+
+.category{
+    position: relative;
+    height: 40px;
+    background-color: #eeeff0;
+}
+
+.category .item{
+    float: left;
+    width: 50%;
+    height: 42px;
+    line-height: 40px;
+    color: #d44449;
+    font-size: 16px;
+    text-align: center;
+}
+
+.layer{
+    position: absolute;
+    bottom: 0px;
+    height: 2px;
+    background-color: #cdcecf;
+    width: 100%;
+}
+
+.on{
+    position: absolute;
+    width: 50%;
+    background-color: #d1372d;
+    height: 2px;
+    left: 0px;
+}
+
+ul,li{
+    list-style: none;
+}
+
+.store{
+    padding: 15px 15px 0px 15px;
+}
+
+.store li{
+    position: relative;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.35);
+    background-color: #fff;
+    padding: 10px;
+}
+
+.store li .store_name{
+    text-indent: 15px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    color: #666;
+}
+
+.store li .class{
+    padding: 20px;
+    border-bottom: 1px solid #e8e8e8;
+    border-top: 1px solid #e8e8e8;
+    height: 150px;
+    color: #949596;
+}
+
+.store li .class:last-child{
+    border-bottom: none;
+}
+
+.store li .class .class_name{
+    height: 30px;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.store li .class .item{
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.store li .class .item span{
+    position: absolute;
+    left: 40%;
+    width: 60%;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.store li .class .btns{
+    position: relative;
+    padding: 10px;
+    height: 25px;
+}
+
+.store li .class .btns .btn_item{
+    float: left;
+    width: 50%;
+    text-align: center;
+    height: 25px;
+}
+
+.store li .class .btns .btn_item .detail_btn{
+    padding: 0 5px;
+    color: #666;
+    display: inline-block;
+    border: 1px solid #666;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 5px;
+}
+
+.store li .class .btns .btn_item .book_btn{
+    padding: 0 5px;
+    display: inline-block;
+    color: #d2372d;
+    border: 1px solid #d2372d;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 5px;
+}

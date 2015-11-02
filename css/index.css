@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0
+}
+
+a {
+    text-decoration: none
+}
+
+body {
+    font-family: Hiragino Sans GB,Arial,Helvetica,"宋体",sans-serif;
+    font-size: 14px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    background-color: #cacbcc;
+    overflow-x:hidden;
+}
+
+header{
+    height: 45px;
+    background-color: #22272a;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 45px;
+}
+
+.userinfo{
+    height: 110px;
+    position: relative;
+    background-color: #eeeff0;
+}
+
+.userinfo .headimg{
+    padding: 15px 20px 15px 20px;
+    width: 80px;
+    height: 80px;
+}
+
+.userinfo .headimg img{
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 50%;
+}
+
+.userinfo .info{
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    left: 120px;
+    right: 5px;
+}
+
+.userinfo .info .item{
+    width: 50%;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    color: #d44449;
+    font-size: 16px;
+}
+
+.lab{
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    background-color: #d2372d;
+    margin-top: 20px;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 2px solid #94241d;
+    border-top: 2px solid #94241d;
+}
+
+.category{
+    position: relative;
+    height: 40px;
+    background-color: #eeeff0;
+}
+
+.category .item{
+    float: left;
+    width: 50%;
+    height: 42px;
+    line-height: 40px;
+    color: #d44449;
+    font-size: 16px;
+    text-align: center;
+}
+
+.layer{
+    position: absolute;
+    bottom: 0px;
+    height: 2px;
+    background-color: #cdcecf;
+    width: 100%;
+}
+
+.on{
+    position: absolute;
+    width: 50%;
+    background-color: #d1372d;
+    height: 2px;
+    left: 0px;
+}
+
+.list{
+    background-color: #eeeff0;
+    padding: 10px 10px 35px 10px;
+}
+
+.list .item{
+    position: relative;
+    margin-bottom: 10px;
+    box-listadow: 2px 4px 4px rgba(0,0,0,0.35);
+    border-radius: 5px;
+    background-color: #fff;
+    height: 160px;
+    padding: 5px 10px 5px 10px;
+}
+
+.list .item .img{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
+
+.list .item .img img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.list .item .name{
+    position: absolute;
+    left: 70px;
+    right: 10px;
+    top: 5px;
+    height: 50px;
+    line-height: 50px;
+    color: #949596;
+    font-size: 17px;
+}
+
+.list .item .detail{
+    position: absolute;
+    top: 55px;
+    left: 10px;
+    right: 10px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    height: 45px;
+    width: 100%;
+    background-color: #c9352b;
+}
+
+footer .item{
+    float: left;
+    height: 45px;
+    line-height: 45px;
+    width: 33%;
+    text-align: center;
+    color: #fff;
+}
+
+.list .item .detail .item2{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    width: 33%;
+    color: #949596;
+    font-size: 14px;
+}
+
+.list .item .beizhu{
+    position: absolute;
+    top: 95px;
+    left: 10px;
+    right: 10px;
+    color: #949596;
+    font-size: 14px;
+}
+
+.list .item .btns{
+    position: absolute;
+    height: 20px;
+    width: 150px;
+    padding: 5px 10px 5px 0px;
+    bottom: 0px;
+    right: 0px;
+}
+
+.list .item .btns .qx{
+    float: left;
+    width: 70px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+    color: #949596;
+}
+
+.list .item .btns .wk{
+    float: left;
+    text-align: center;
+    margin-left: 6px;
+    width: 70px;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+    color: #949596;
+}
+
+@media only screen and (max-width: 340px) {
+    .list .item .detail .item2{
+        width: 50%;
+    }
+    .list .item .beizhu{
+        top:135px;
+    }
+    .list .item{
+        height: 200px;
+    }
+}
+
+.sj{
+    display: none;
+}
+
+@keyframes pq
+{
+    from {left:50%;}
+    to {left:0;}
+}
+
+@-webkit-keyframes pq /*Safari and Chrome*/
+{
+    from {left:50%;}
+    to {left:0;}
+}
+
+@keyframes zl
+{
+    from {left:0;}
+    to {left:50%;}
+}
+
+@-webkit-keyframes zl /*Safari and Chrome*/
+{
+    from {left:0;}
+    to {left:50%;}
+}

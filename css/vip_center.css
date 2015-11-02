@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0
+}
+
+a {
+    text-decoration: none
+}
+
+body {
+    font-family: Hiragino Sans GB,Arial,Helvetica,"宋体",sans-serif;
+    font-size: 14px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    background-color: #eeeff0;
+    overflow-x:hidden;
+}
+
+header{
+    height: 45px;
+    background-color: #22272a;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 45px;
+}
+
+.userinfo{
+    height: 125px;
+    position: relative;
+    background-color: #eeeff0;
+}
+
+.userinfo .headimg{
+    padding: 30px 20px 15px 20px;
+    width: 80px;
+    height: 80px;
+}
+
+.userinfo .headimg img{
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 50%;
+}
+
+.userinfo .info{
+    position: absolute;
+    top: 30px;
+    bottom: 15px;
+    left: 120px;
+    right: 5px;
+}
+
+.userinfo .info .item{
+    width: 50%;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    color: #d44449;
+    font-size: 16px;
+}
+
+.userinfo .edit{
+    position: absolute;
+    color: #d2372d;
+    top: 0px;
+    text-align: center;
+    right: 20px;
+    font-size: 15px;
+    height: 30px;
+    line-height: 30px;
+    width: 50px;
+}
+
+ul,li{
+    list-style: none;
+}
+
+.line{
+    height: 20px;
+    background-color: #dcddde;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.35);
+}
+
+.tk{
+    padding-bottom: 65px;
+}
+
+.main{
+    padding: 0 30px 0 30px;
+}
+
+.main li{
+    border-bottom: 1px solid #c9352b;
+    height: 60px;
+    line-height: 60px;
+    padding: 0px 20px 0px 20px;
+    color: #949596;
+    font-size: 18px;
+    position: relative;
+}
+
+i:before {
+    border: #d2372d solid 3px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -8px;
+    display: block;
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg)
+}
+
+.main li:last-child{
+    border-bottom: none;
+}
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    height: 45px;
+    width: 100%;
+    background-color: #c9352b;
+}
+
+footer .item{
+    float: left;
+    height: 45px;
+    line-height: 45px;
+    width: 33%;
+    text-align: center;
+    color: #fff;
+}
