@@ -99,11 +99,11 @@ ul,li{
     list-style: none;
 }
 
-.store{
+.list{
     padding: 15px 15px 0px 15px;
 }
 
-.store li{
+.list li{
     position: relative;
     margin-bottom: 15px;
     border-radius: 5px;
@@ -112,7 +112,7 @@ ul,li{
     padding: 10px;
 }
 
-.store li .store_name{
+.list li .store_name{
     text-indent: 15px;
     height: 40px;
     line-height: 40px;
@@ -120,7 +120,7 @@ ul,li{
     color: #666;
 }
 
-.store li .class{
+.list li .class{
     padding: 20px;
     border-bottom: 1px solid #e8e8e8;
     border-top: 1px solid #e8e8e8;
@@ -128,17 +128,17 @@ ul,li{
     color: #949596;
 }
 
-.store li .class:last-child{
+.list li .class:last-child{
     border-bottom: none;
 }
 
-.store li .class .class_name{
+.list li .class .class_name{
     height: 30px;
     font-size: 16px;
     line-height: 30px;
 }
 
-.store li .class .item{
+.list li .class .item{
     position: relative;
     height: 30px;
     line-height: 30px;
@@ -146,7 +146,7 @@ ul,li{
     width: 100%;
 }
 
-.store li .class .item span{
+.list li .class .item span{
     position: absolute;
     left: 40%;
     width: 60%;
@@ -155,20 +155,20 @@ ul,li{
     line-height: 30px;
 }
 
-.store li .class .btns{
+.list li .class .btns{
     position: relative;
     padding: 10px;
     height: 25px;
 }
 
-.store li .class .btns .btn_item{
+.list li .class .btns .btn_item{
     float: left;
     width: 50%;
     text-align: center;
     height: 25px;
 }
 
-.store li .class .btns .btn_item .detail_btn{
+.list li .class .btns .btn_item .detail_btn{
     padding: 0 5px;
     color: #666;
     display: inline-block;
@@ -178,7 +178,7 @@ ul,li{
     border-radius: 5px;
 }
 
-.store li .class .btns .btn_item .book_btn{
+.list li .class .btns .btn_item .book_btn{
     padding: 0 5px;
     display: inline-block;
     color: #d2372d;
@@ -186,4 +186,32 @@ ul,li{
     height: 25px;
     line-height: 25px;
     border-radius: 5px;
+}
+
+.sj{
+    display: none;
+}
+
+@keyframes pq
+{
+    from {left:50%;}
+    to {left:0;}
+}
+
+@-webkit-keyframes pq /*Safari and Chrome*/
+{
+    from {left:50%;}
+    to {left:0;}
+}
+
+@keyframes zl
+{
+    from {left:0;}
+    to {left:50%;}
+}
+
+@-webkit-keyframes zl /*Safari and Chrome*/
+{
+    from {left:0;}
+    to {left:50%;}
 }

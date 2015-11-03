@@ -13,13 +13,13 @@
         <div class="title">已购课程</div>
     </header>
     <div class="category">
-        <div class="item">商铺</div>
-        <div class="item">私教</div>
+        <div class="item a">商铺</div>
+        <div class="item b">私教</div>
         <div class="layer">
             <div class="on"></div>
         </div>
     </div>
-    <ul class="store">
+    <ul class="list sh">
         <li>
             <div class="store_name">XXX 健身会所</div>
             <div class="class">
@@ -52,6 +52,66 @@
             </div>
         </li>
     </ul>
-
+    <ul class="list sj">
+        <li>
+            <div class="store_name">XXX 健身会所</div>
+            <div class="class">
+                <div class="class_name">基础瑜伽</div>
+                <div class="item">购买日期：<span>2015-10-23</span></div>
+                <div class="item">总共课时：<span>21 课时</span></div>
+                <div class="item">剩余课时：<span>10 课时</span></div>
+                <div class="btns">
+                    <div class="btn_item">
+                        <div class="detail_btn">详细信息</div>
+                    </div>
+                    <div class="btn_item">
+                        <div class="book_btn">立即预约</div>
+                    </div>
+                </div>
+            </div>
+            <div class="class">
+                <div class="class_name">基础瑜伽</div>
+                <div class="item">购买日期：<span>2015-10-23</span></div>
+                <div class="item">总共课时：<span>21 课时</span></div>
+                <div class="item">剩余课时：<span>10 课时</span></div>
+                <div class="btns">
+                    <div class="btn_item">
+                        <div class="detail_btn">详细信息</div>
+                    </div>
+                    <div class="btn_item">
+                        <div class="book_btn">立即预约</div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <script type="text/javascript">
+        $(".a").click(function(){
+            $(".sh").show();
+            $(".sj").hide();
+            if($(".on").css("left")!="0px"){
+                $(".on").css("-webkit-animation","pq 0.5s");
+                $(".on").css("-moz-animation","pq 0.5s");
+                $(".on").css("animation","pq 0.5s");
+                setTimeout($(".on").css("left","0"),500);
+            }
+        });
+        $(".b").click(function(){
+            $(".sh").hide();
+            $(".sj").show();
+            if($(".on").css("left")=="0px"){
+                $(".on").css("-webkit-animation","zl 0.5s");
+                $(".on").css("-moz-animation","zl 0.5s");
+                $(".on").css("animation","zl 0.5s");
+                setTimeout($(".on").css("left","50%"),500);
+            }
+        });
+        $(".detail_btn").click(function(){
+            window.location.href='purchased_class_detail.html';
+        });
+        $(".book_btn").click(function(){
+            window.location.href='book_class_store.html';
+        });
+    </script>
 </body>
 </html>

@@ -13,11 +13,11 @@
         <div class="title">个人资料编辑</div>
     </header>
     <ul class="main">
-        <form>
+        <form method="post" enctype ="multipart/form-data" action="" name="form1">
             <li class="head">
                 <label>头像</label>
                 <img src="">
-                <input type="file" class="inputfile"/>
+                <input type="file" name="user_img" onchange="determine(this)" class="inputfile"/>
             </li>
             <li class="item">
                 <label>昵称</label>
@@ -51,5 +51,25 @@
     <div class="save">
         <button type="button" class="save_btn">保存</button>
     </div>
+    <script type="text/javascript">
+        function determine(target){
+            var fileSize = 0;
+            fileSize = target.files[0].size;
+            var size = fileSize / 1024;
+            if(size>1000){
+                $("#fujian").toggle();
+                target.value="";
+                return
+            }
+            var name=target.value;
+            var fileName = name.substring(name.lastIndexOf(".")+1).toLowerCase();
+            if(fileName !="jpg" && fileName !="png"){
+                $("#geshi").toggle();
+                target.value="";
+                return
+            }
+            $(".head img").attr('src',window.URL.createObjectURL(target.files[0]));
+        }
+    </script>
 </body>
 </html>

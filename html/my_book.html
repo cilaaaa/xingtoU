@@ -10,16 +10,16 @@
 <body>
     <header>
         <a href="javascript:void(0)" onclick="javascript:history.back(-1)" class="back">返回</a>
-        <div class="title">健身纪录</div>
+        <div class="title">我的预约</div>
     </header>
     <div class="category">
-        <div class="item">商铺</div>
-        <div class="item">私教</div>
+        <div class="item a">商铺</div>
+        <div class="item b">私教</div>
         <div class="layer">
             <div class="on"></div>
         </div>
     </div>
-    <ul class="store">
+    <ul class="list sh">
         <li>
             <div class="time">2015-10-18 19:00～20:00</div>
             <div class="img">
@@ -30,11 +30,37 @@
             <div class="classname">21天马甲线</div>
             <div class="unbook_btn">取消预定</div>
         </li>
+    </ul>
+    <ul class="list sj">
         <li>
             <div class="null">对不起,您还没有预约过任何课程</div>
             <div class="book_btn">去预定</div>
         </li>
     </ul>
-
+    <script type="text/javascript">
+        $(".a").click(function(){
+            $(".sh").show();
+            $(".sj").hide();
+            if($(".on").css("left")!="0px"){
+                $(".on").css("-webkit-animation","pq 0.5s");
+                $(".on").css("-moz-animation","pq 0.5s");
+                $(".on").css("animation","pq 0.5s");
+                setTimeout($(".on").css("left","0"),500);
+            }
+        });
+        $(".b").click(function(){
+            $(".sh").hide();
+            $(".sj").show();
+            if($(".on").css("left")=="0px"){
+                $(".on").css("-webkit-animation","zl 0.5s");
+                $(".on").css("-moz-animation","zl 0.5s");
+                $(".on").css("animation","zl 0.5s");
+                setTimeout($(".on").css("left","50%"),500);
+            }
+        });
+        $(".book_btn").click(function(){
+            window.location.href='book_class_store.html';
+        });
+    </script>
 </body>
 </html>

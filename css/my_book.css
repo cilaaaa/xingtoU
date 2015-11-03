@@ -99,11 +99,11 @@ ul,li{
     list-style: none;
 }
 
-.store{
+.list{
     padding: 15px 15px 0px 15px;
 }
 
-.store li{
+.list li{
     position: relative;
     margin-bottom: 15px;
     border-radius: 5px;
@@ -115,24 +115,24 @@ ul,li{
     padding: 10px 15px 10px 15px;
 }
 
-.store li .time{
+.list li .time{
     height: 30px;
     line-height: 30px;
 }
 
-.store li .img{
+.list li .img{
     width: 40px;
     height: 40px;
     padding: 5px;
 }
 
-.store li .img img{
+.list li .img img{
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
 
-.store li .name{
+.list li .name{
     position: absolute;
     top: 40px;
     left: 80px;
@@ -142,7 +142,7 @@ ul,li{
     line-height: 50px;
 }
 
-.store li .unbook_btn{
+.list li .unbook_btn{
     position: absolute;
     right: 10px;
     bottom: 10px;
@@ -184,7 +184,7 @@ ul,li{
 
 .book_btn{
     position: absolute;
-    top: 50%;
+    bottom: 15px;
     margin-top: -13.5px;
     padding: 0 20px;
     height: 25px;
@@ -193,4 +193,32 @@ ul,li{
     border-radius: 3px;
     border: 1px solid #d2372d;
     right: 30px;
+}
+
+.sj{
+    display: none;
+}
+
+@keyframes pq
+{
+    from {left:50%;}
+    to {left:0;}
+}
+
+@-webkit-keyframes pq /*Safari and Chrome*/
+{
+    from {left:50%;}
+    to {left:0;}
+}
+
+@keyframes zl
+{
+    from {left:0;}
+    to {left:50%;}
+}
+
+@-webkit-keyframes zl /*Safari and Chrome*/
+{
+    from {left:0;}
+    to {left:50%;}
 }

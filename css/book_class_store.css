@@ -113,8 +113,7 @@ ul,li{
 
 .store li .class{
     margin: 0 15px;
-    height: 50px;
-    line-height: 50px;
+    height: 65px;
     border-bottom: 1px solid #e8e8e8;
 }
 
@@ -125,13 +124,20 @@ ul,li{
 .store li .class .item{
     float: left;
     width: 33%;
-    height: 50px;
+    height: 65px;
+    display: table;
     text-align: center;
+}
+
+.store li .class .item span{
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .store li .class .item .book_btn{
     display: inline-block;
-    padding: 0 10px;
+    margin-top: 15.5px;
+    padding: 0 5px;
     border: 2px solid #d2372d;
     border-radius: 3px;
     color: #d2372d;

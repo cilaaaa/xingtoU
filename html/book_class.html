@@ -13,31 +13,74 @@
         <div class="title">预定课程</div>
     </header>
     <div class="category">
-        <div class="item">商铺</div>
-        <div class="item">私教</div>
+        <div class="item a">商铺</div>
+        <div class="item b">私教</div>
         <div class="layer">
             <div class="on"></div>
         </div>
     </div>
-    <ul class="store">
+    <ul class="list sh">
         <li>
             <div class="name">XXX健身会所</div>
             <div class="class">
-                <div class="item">21天人马线</div>
-                <div class="item">剩余 10/21 课时</div>
+                <div class="item"><span>21天人马线</span></div>
+                <div class="item"><span>剩余 10/21 课时</span></div>
                 <div class="item">
                     <div class="book_btn">立即预订</div>
                 </div>
             </div>
             <div class="class">
-                <div class="item">上肢力量训练</div>
-                <div class="item">剩余 5/11 课时</div>
+                <div class="item"><span>上肢力量训练</span></div>
+                <div class="item"><span>剩余 5/11 课时</span></div>
                 <div class="item">
                     <div class="book_btn">立即预订</div>
                 </div>
             </div>
         </li>
     </ul>
-
+    <ul class="list sj">
+        <li>
+            <div class="name">XXX健身会所</div>
+            <div class="class">
+                <div class="item"><span>21天人马线</span></div>
+                <div class="item"><span>剩余 10/21 课时</span></div>
+                <div class="item">
+                    <div class="book_btn">立即预订</div>
+                </div>
+            </div>
+            <div class="class">
+                <div class="item"><span>上肢力量训练</span></div>
+                <div class="item"><span>剩余 5/11 课时</span></div>
+                <div class="item">
+                    <div class="book_btn">立即预订</div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <script type="text/javascript">
+        $(".a").click(function(){
+            $(".sh").show();
+            $(".sj").hide();
+            if($(".on").css("left")!="0px"){
+                $(".on").css("-webkit-animation","pq 0.5s");
+                $(".on").css("-moz-animation","pq 0.5s");
+                $(".on").css("animation","pq 0.5s");
+                setTimeout($(".on").css("left","0"),500);
+            }
+        });
+        $(".b").click(function(){
+            $(".sh").hide();
+            $(".sj").show();
+            if($(".on").css("left")=="0px"){
+                $(".on").css("-webkit-animation","zl 0.5s");
+                $(".on").css("-moz-animation","zl 0.5s");
+                $(".on").css("animation","zl 0.5s");
+                setTimeout($(".on").css("left","50%"),500);
+            }
+        });
+        $(".book_btn").click(function(){
+            window.location.href='book_class_detail.html';
+        });
+    </script>
 </body>
 </html>

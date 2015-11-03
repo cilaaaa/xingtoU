@@ -99,11 +99,11 @@ ul,li{
     list-style: none;
 }
 
-.store{
+.list{
     padding: 15px 15px 0px 15px;
 }
 
-.store li{
+.list li{
     position: relative;
     margin-bottom: 15px;
     border-radius: 5px;
@@ -114,26 +114,26 @@ ul,li{
     padding: 10px 15px 10px 15px;
 }
 
-.store li .main{
+.list li .main{
     position: relative;
     height: 50px;
     width: 100%;
     border-bottom: 1px solid #e8e8e8;
 }
 
-.store li .main .img{
+.list li .main .img{
     width: 40px;
     height: 40px;
     padding: 5px;
 }
 
-.store li .main .img img{
+.list li .main .img img{
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
 
-.store li .main .name{
+.list li .main .name{
     position: absolute;
     left: 60px;
     top: 0px;
@@ -143,7 +143,7 @@ ul,li{
     font-size: 18px;
 }
 
-.store li .main .total{
+.list li .main .total{
     color: #d2372d;
     font-size: 18px;
     width: 90px;
@@ -155,18 +155,18 @@ ul,li{
     text-align: center;
 }
 
-.store li .class{
+.list li .class{
     position: relative;
     margin: 0 15px;
     border-bottom: 1px solid #e8e8e8;
     height: 60px;
 }
 
-.store li .class:last-child{
+.list li .class:last-child{
     border-bottom: none;
 }
 
-.store li .class .time{
+.list li .class .time{
     position: absolute;
     top: 0px;
     height: 30px;
@@ -175,7 +175,7 @@ ul,li{
     right: 100px;
 }
 
-.store li .class .money{
+.list li .class .money{
     position: absolute;
     top: 0px;
     height: 30px;
@@ -185,10 +185,44 @@ ul,li{
     width: 90px;
 }
 
-.store li .class .classname{
+.list li .class .classname{
     position: absolute;
     top: 30px;
     left: 45px;
     height: 30px;
     line-height: 30px;
+}
+
+@media only screen and (max-width: 340px) {
+    .list li .main .name{
+        line-height: 25px;
+    }
+}
+
+.sj{
+    display: none;
+}
+
+@keyframes pq
+{
+    from {left:50%;}
+    to {left:0;}
+}
+
+@-webkit-keyframes pq /*Safari and Chrome*/
+{
+    from {left:50%;}
+    to {left:0;}
+}
+
+@keyframes zl
+{
+    from {left:0;}
+    to {left:50%;}
+}
+
+@-webkit-keyframes zl /*Safari and Chrome*/
+{
+    from {left:0;}
+    to {left:50%;}
 }

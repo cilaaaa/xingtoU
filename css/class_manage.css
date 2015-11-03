@@ -22,7 +22,7 @@ header{
     background-color: #22272a;
     width: 100%;
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     line-height: 45px;
 }
@@ -59,15 +59,15 @@ header{
     left: 0px;
 }
 
-.sh{
+.list{
     background-color: #eeeff0;
-    padding: 10px 10px 35px 10px;
+    padding: 10px 10px 10px 10px;
     margin-bottom: 90px;
 }
 
-.sh .item{
+.list .item{
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     box-shadow: 2px 4px 4px rgba(0,0,0,0.35);
     border-radius: 5px;
     background-color: #fff;
@@ -75,19 +75,19 @@ header{
     padding: 5px 10px 5px 10px;
 }
 
-.sh .item .img{
+.list .item .img{
     width: 40px;
     height: 40px;
     padding: 5px;
 }
 
-.sh .item .img img{
+.list .item .img img{
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
 
-.sh .item .name{
+.list .item .name{
     position: absolute;
     left: 70px;
     right: 10px;
@@ -98,12 +98,11 @@ header{
     font-size: 17px;
 }
 
-.sh .item .detail{
+.list .item .detail{
     position: absolute;
     top: 55px;
     left: 10px;
     right: 10px;
-    height: 40px;
 }
 
 footer{
@@ -123,7 +122,7 @@ footer .item{
     color: #fff;
 }
 
-.sh .item .detail .item2{
+.list .item .detail .item2{
     float: left;
     height: 40px;
     line-height: 40px;
@@ -132,18 +131,16 @@ footer .item{
     font-size: 14px;
 }
 
-.sh .item .beizhu{
+.list .item .beizhu{
     position: absolute;
     top: 95px;
     left: 10px;
     right: 10px;
-    height: 30px;
-    line-height: 30px;
     color: #949596;
     font-size: 14px;
 }
 
-.sh .item .btns{
+.list .item .btns{
     position: absolute;
     height: 25px;
     width: 150px;
@@ -152,7 +149,7 @@ footer .item{
     right: 0px;
 }
 
-.sh .item .btns .qx{
+.list .item .btns .qx{
     float: left;
     width: 70px;
     height: 25px;
@@ -163,7 +160,7 @@ footer .item{
     color: #949596;
 }
 
-.sh .item .btns .wk{
+.list .item .btns .wk{
     float: left;
     text-align: center;
     margin-left: 6px;
@@ -185,4 +182,44 @@ footer .item{
     color: #d2372d;
     font-size: 20px;
     text-align: center;
+}
+
+@media only screen and (max-width: 340px) {
+    .list .item .detail .item2{
+        width: 50%;
+    }
+    .list .item .beizhu{
+        top:135px;
+    }
+    .list .item{
+        height: 200px;
+    }
+}
+
+.sj{
+    display: none;
+}
+
+@keyframes pq
+{
+    from {left:50%;}
+    to {left:0;}
+}
+
+@-webkit-keyframes pq /*Safari and Chrome*/
+{
+    from {left:50%;}
+    to {left:0;}
+}
+
+@keyframes zl
+{
+    from {left:0;}
+    to {left:50%;}
+}
+
+@-webkit-keyframes zl /*Safari and Chrome*/
+{
+    from {left:0;}
+    to {left:50%;}
 }

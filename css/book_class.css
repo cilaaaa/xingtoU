@@ -99,11 +99,11 @@ ul,li{
     list-style: none;
 }
 
-.store{
+.list{
     padding: 15px 15px 0px 15px;
 }
 
-.store li{
+.list li{
     position: relative;
     margin-bottom: 15px;
     border-radius: 5px;
@@ -114,7 +114,7 @@ ul,li{
     padding: 10px 15px 10px 15px;
 }
 
-.store li .name{
+.list li .name{
     height: 40px;
     line-height: 40px;
     font-size: 18px;
@@ -122,30 +122,64 @@ ul,li{
     border-bottom: 1px solid #e8e8e8;
 }
 
-.store li .class{
+.list li .class{
     margin: 0 15px;
-    height: 50px;
-    line-height: 50px;
+    height: 65px;
     border-bottom: 1px solid #e8e8e8;
 }
 
-.store li .class:last-child{
+.list li .class:last-child{
     border-bottom: none;
 }
 
-.store li .class .item{
+.list li .class .item{
     float: left;
     width: 33%;
-    height: 50px;
+    height: 65px;
+    display: table;
     text-align: center;
 }
 
-.store li .class .item .book_btn{
+.list li .class .item span{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.list li .class .item .book_btn{
+    margin-top: 15.5px;
     display: inline-block;
-    padding: 0 10px;
+    padding: 0 5px;
     border: 2px solid #d2372d;
     border-radius: 3px;
     color: #d2372d;
     height: 30px;
     line-height: 30px;
+}
+
+.sj{
+    display: none;
+}
+
+@keyframes pq
+{
+    from {left:50%;}
+    to {left:0;}
+}
+
+@-webkit-keyframes pq /*Safari and Chrome*/
+{
+    from {left:50%;}
+    to {left:0;}
+}
+
+@keyframes zl
+{
+    from {left:0;}
+    to {left:50%;}
+}
+
+@-webkit-keyframes zl /*Safari and Chrome*/
+{
+    from {left:0;}
+    to {left:50%;}
 }

@@ -21,21 +21,25 @@
         <li>
             <div class="name">XXX健身工作室</div>
             <div class="class">
-                <div class="item">基础瑜伽</div>
-                <div class="item">教练：张三</div>
+                <div class="item"><span>基础瑜伽</span></div>
+                <div class="item"><span>教练：张三</span></div>
                 <div class="item">
                     <div class="book_btn">立即预订</div>
                 </div>
             </div>
             <div class="class">
-                <div class="item">进阶瑜伽</div>
-                <div class="item">教练：李斯</div>
+                <div class="item"><span>进阶瑜伽</span></div>
+                <div class="item"><span>教练：李斯</span></div>
                 <div class="item">
                     <div class="book_btn">立即预订</div>
                 </div>
             </div>
         </li>
     </ul>
-
+    <script type="text/javascript">
+        $(".book_btn").click(function(){
+            window.location.href='book_class.html';
+        });
+    </script>
 </body>
 </html>
